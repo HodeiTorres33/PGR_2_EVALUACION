@@ -69,7 +69,7 @@ public class Principal {
             System.out.println("Altura en metro (1.72):");
             float altura = Util2.leerFloat();
             Cliente cliente = new Cliente(nombre, fechaNacimiento, null, altura);
-
+/* revisar altura antes */
             System.out.println("Cliente creado con codigo: " +cliente.getCodigo());
 
             boolean continuar = true;
@@ -176,6 +176,9 @@ public class Principal {
             return;
         }
 
+        
+        
+        /*
         Map<String, Integer> contadores = new HashMap<>();
 
         for (Cliente cliente : clientes) {
@@ -188,7 +191,10 @@ public class Principal {
             } catch (ArithmeticException e) {
             }
         }
-
+        */
+        
+        
+/*
         Map<String, Integer> ordenado = contadores.entrySet()
             .stream()
             .sorted((e1, e2) -> e2.getValue().compareTo(e1.getValue()))
@@ -198,7 +204,7 @@ public class Principal {
                 (e1, e2) -> e1,
                 LinkedHashMap::new
             ));
-
+*/
 
         System.out.println("\n┌────────────────────────────────────┬─────────────────┐");
         System.out.println("│ Clasificación                      │ Nº de clientes  │");

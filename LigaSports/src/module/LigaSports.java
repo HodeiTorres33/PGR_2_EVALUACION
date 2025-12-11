@@ -67,7 +67,7 @@ public class LigaSports {
     
     public void eliminarCompetidor(String nombre) {
         if (competidores.remove(nombre)) {
-            partidasGanadas.remove(nombre); // También lo eliminamos del HashMap
+            partidasGanadas.remove(nombre); 
             System.out.println("Competidor '" + nombre + "' eliminado correctamente.");
         } else {
             System.out.println("El competidor '" + nombre + "' no existe.");

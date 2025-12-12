@@ -1,7 +1,7 @@
 package module;
 
 import java.time.LocalDate;
-import module.*;
+import java.time.Period;
 
 public abstract class Persona {
 	protected String dni;
@@ -18,6 +18,9 @@ public abstract class Persona {
 		this.genero = genero;
 		this.localidad = localidad;
 	}
+	public int calcularEdad() {
+    return Period.between(this.fechaNac, LocalDate.now()).getYears();
+}
 	public String getDni() {
 		return dni;
 	}

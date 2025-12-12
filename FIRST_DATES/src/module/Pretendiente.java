@@ -6,14 +6,15 @@ import java.util.ArrayList;
 public class Pretendiente extends Persona {
 
 	private Genero generoBuscado;
-	private ArrayList<String> coleccionCitas = new ArrayList<>();
-	
-	public void Pretendiente() {
-		
+	public ArrayList<Cita> coleccionCitas = new ArrayList<>();
+
+	public Pretendiente(String dni, String nombre, LocalDate fechaNac, Genero genero, String localidad) {
+		super(dni, nombre, fechaNac, genero, localidad);
 	}
+	
 
 	public Pretendiente(String dni, String nombre, LocalDate fechaNac, Genero genero, String localidad,
-			Genero generoBuscado, ArrayList<String> coleccionCitas) {
+			Genero generoBuscado, ArrayList<Cita> coleccionCitas) {
 		super(dni, nombre, fechaNac, genero, localidad);
 		this.generoBuscado = generoBuscado;
 		this.coleccionCitas = coleccionCitas;
@@ -24,11 +25,11 @@ public class Pretendiente extends Persona {
 		return "Pretendiente [generoBuscado=" + generoBuscado + ", coleccionCitas=" + coleccionCitas + "]";
 	}
 
-	public ArrayList<String> getColeccionCitas() {
+	public ArrayList<Cita> getColeccionCitas() {
 		return coleccionCitas;
 	}
 
-	public void setColeccionCitas(ArrayList<String> coleccionCitas) {
+	public void setColeccionCitas(ArrayList<Cita> coleccionCitas) {
 		this.coleccionCitas = coleccionCitas;
 	}
 

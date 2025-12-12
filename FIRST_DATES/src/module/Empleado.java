@@ -1,7 +1,6 @@
 package module;
 
 import java.time.LocalDate;
-import module.*;
 
 public class Empleado extends Persona {
 
@@ -38,10 +37,6 @@ public class Empleado extends Persona {
 
 	public void setFechaAlta(LocalDate fechaAlta) {
 		this.fechaAlta = fechaAlta;
-	}
-
-	public LocalDate fechaHoy() {
-		return this.fechaAlta = LocalDate.now();
 	}
 
 }

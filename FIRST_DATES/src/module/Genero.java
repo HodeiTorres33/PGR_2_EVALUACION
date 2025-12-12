@@ -1,5 +1,5 @@
 package module;
 
 public enum Genero {
-Mujer,Hombre
+Mujer,Hombre,Otro
 }
